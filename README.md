@@ -1,5 +1,7 @@
 # boulder-route-preview
 
+Create, map, and analyze a trail-based route in Boulder, CO using high-quality, publicly-available data from the City of Boulder and the National Elevation Dataset
+
 Build a route on a map of Boulder area trails by clicking on trail segments.
 Click `Build Route` to create an elevation profile and statistics about the route.
 
