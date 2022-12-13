@@ -29,19 +29,13 @@ npm install
 npm start
 ```
 
-## Current Progress
+## Lower-priority issues
 
 ### To-do
 
-- Deploy app on render.com!!
-
 Bugs
-- Black box appears around geojson features after clicking them.
-  - Happens in edge/chrome, but not firefox.
 
 Features
-- Show an indication that the route is being built after user clicks
-  `Build Route`
 - Stats tab: show elevation loss too.
   (Not as much of an issue on round-trips)
 - Find some way to use the same trail segment twice! ie an out-and-back or lollipop
@@ -59,15 +53,10 @@ Features
 - [Huge, Potential] Add ability to save routes with names.
 
 Data Processing
-- Make decisions on which elevation profiles and grades to show
-  (various sampling/smoothing approaches are displayed currently)
 - See if it's possible/easy to add a histogram of grades like
   in the (currently evolving) `horsetooth-analysis`
 
 Aesthetics
-- Make `Build Route` and `Clear Selected Segments` buttons look pretty.
-  They're just ugly unstyled placeholders thrown onto the page currently.
-- Reduce route map height (xy plot is so low it's partially hidden)
 - Selected segment list: brainstorm a better way to display other than
   a scrolly plain-text div.
 - Elev profile: show elevation axis ticks on left side
@@ -80,12 +69,8 @@ Aesthetics
   instead of `fitBounds` wherever it occurs.
 
 Performance
-- Use a smaller plotly.js bundle since I'm just doing cartesian:
-  https://github.com/plotly/react-plotly.js/#customizing-the-plotlyjs-bundle
 
 Requirements
-- Update `elevation-query` GH repo w/ local changes, then change
-  the source in `requirements.txt`.
 
 Refactor
 - Make a smarter way to control `getData()` source between
